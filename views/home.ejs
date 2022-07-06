@@ -1,0 +1,130 @@
+
+    <%- include("partials/header"); -%>
+    <header class="dh-header-non-rectangular">
+        <div class="header__bg" style="padding-top:100px;  text-align: center; color:rgb(5, 19, 34)">
+            <div style="transform: rotate(5deg);">
+            <h1 style="font-weight: bold;">Welcome to Solair AI</h1>
+            <h5 >A group of passionate developers who are commited to provide the best from their input<br>
+            to help achieving your buisness goals and to provide world class services that will be benificial <br> in this modern era
+             so why to wait, take a step forward toward digitialization with us!</h5>
+             <a class="btn blog-slider__button" type="button" href="contact" >Contact us</a>
+            </div>
+        </div>
+    </header>
+    <h1 class="text-center" style="padding: 10;padding-top: 10;padding-bottom: 10;">Why You Should Choose us?</h1>
+    <div class="container">
+        <div class="row row-fitur">
+            <div class="col-sm-4 col-md-4 waves-effect kolom-a">
+                <div class="fitur-a"><img src="assets/img/ic-lock.png"></div>
+                <div class="separator-fitur"></div>
+                <div>
+                    <h4 class="heading-fitur">Secure </h4>
+                    <p class="paragraf-fitur">We gurantee the safety and secuirty of our product & services. we proves our-selves as trusty companion of severel big names in term of high-standerd encryptions</p>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 waves-effect kolom-b">
+                <div class="fitur-a"><img src="assets/img/ic-check.png"></div>
+                <div class="separator-fitur"></div>
+                <div>
+                    <h4 class="heading-fitur">Trusted </h4>
+                    <p class="paragraf-fitur">Products and services that we provides are built as per ISO standerds. we Gurantee authenticity, reliability and quality of our products as they are tested as per legal standerds</p>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 waves-effect kolom-c">
+                <div class="fitur-a"><img src="assets/img/ic-flaw.png"></div>
+                <div class="separator-fitur"></div>
+                <div>
+                    <h4 class="heading-fitur">Updated</h4>
+                    <p class="paragraf-fitur">we use modern features and new technologies and regularly updates our feature to keep ahead with market standerds. along with that we also provide regular maintaince & updations (T & C applied)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="clean-block slider dark">
+        <div class="container">
+            <div class="block-heading">
+                <h2 class="text-info">Tech Updates</h2>
+            </div>
+            <div class="scrollbar" >
+                <main class="page blog-post-list">
+                    <section class="clean-block clean-blog-list dark">
+                        <div class="container">
+                            <div class="block-content">
+
+
+                                <%  articles.forEach(function callback(article , index){ %>
+                                        <div class="clean-blog-post">
+                                            <div class="row">
+                                              
+                                                <div class="col-lg-7">
+                                                    <h3><%=article.title%></h3>
+                                                    <a class="btn btn-outline-primary btn-sm" href="<%=article.url%>" type="button">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <% }) %>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-light">
+        <h1 class="text-center text-success" style="padding-top: 15px;padding-bottom: 15px;color: #1b6ce5!important;">FAQ</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div id="faqlist" class="accordion accordion-flush">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-1">What is Solair Ai?</button></h2>
+                            <div id="content-accordion-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <p class="accordion-body" style="color: black; font-weight: 400;" > Solair Ai is IT based firm which mainly works in the feild of software development and IT services</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-2">What is Motive of SOlair AI?</button></h2>
+                            <div id="content-accordion-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <p class="accordion-body" style="color: black; font-weight: 400;">Motive of Solair Ai is to help startups, local buisnesses ,organization, and institutes to boost their growth by digital upgradation and improve Outreach of technical education</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-3">How and when Solair AI Started?</button></h2>
+                            <div id="content-accordion-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <p class="accordion-body" style="color: black; font-weight: 400;"> Solair Ai is started by passionate college students in 2020 to helps local ventures in the time of pandemic(covid-19)</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-4">What are the upcoming goals of Solair AI?</button></h2>
+                            <div id="content-accordion-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <p class="accordion-body" style="color: black; font-weight: 400;"> We are looking forward to give contribution in the feild of technical education. as solair ai is also running EdTech community to help students & learners</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-5">In which Domains Solair AI is currently working?</button></h2>
+                            <div id="content-accordion-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <p class="accordion-body" style="color: black; font-weight: 400;"> Currently Solair ai is working in the feild of web developement, android app development, and data analytics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        $(document).ready(function(){    
+            //Check if the current URL contains '#'
+            if(document.URL.indexOf("#")==-1){
+                // Set the URL to whatever it was plus "#".
+                url = document.URL+"#";
+                location = "#";
+        
+                //Reload the page
+                location.reload(true);
+            }
+        });
+        </script>
+    <%- include("partials/footer"); -%>
+   

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Solair AI</title>
+    <link rel="stylesheet" href="U-asset/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="U-asset/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="U-asset/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="U-asset/fonts/fontawesome5-overrides.min.css">
+    <link rel="icon" href="assets/favicon.ico">
+   
+
+   
+
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon"><img height="60px" src="assets\img\solair.jpeg"></div>
+                    <div class="sidebar-brand-text mx-3"><span>SOlair AI</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link active" href="user"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="discuss"><i class="fas fa-table"></i><span>Forum</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="logout"><i class="far fa-user-circle"></i><span>Logout</span></a></li>
+                    <li class="nav-item"></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid">
+                           <ul class="navbar-nav flex-nowrap ms-auto">
+                           
+                            <div class="d-none d-sm-block topbar-divider"></div>
+                            <li class="nav-item dropdown no-arrow">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small"><%=USER%></span></a>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <div class="d-sm-flex justify-content-between align-items-center mb-4">
+                        <h3 class="text-dark mb-0">Dashboard</h3>
+                    </div>
+
+                  
+                      <form style="padding: 50px; text-align: center; " class="row" action="/topic" method="POST" >
+                           <h4 style="margin-top:50px">Choose Your Topic</h4>
+                           <select  class="form-select" name="topic" required aria-label="select example">
+                             <option value="">-------</option>
+                             <option value="1" >Popular Online Courses</option>
+                             <option  value="2">Programming Languages</option>
+                             <option  value="3">Learning Platforms by MNCs</option>
+                             <option  value="4">Platform for Programmers</option>
+                             <option  value="5">Programs for students</option>
+                             <option  value="6">Online Mooc Platforms</option>
+                             <option  value="7">Hackathons & Coding Contest</option>
+                           </select>
+                            <button style="margin: 10px;" class="btn btn-primary row-cols-auto" type="submit" >Apply</button>
+                        </form>
+<!--ANDROID DEVELOPMENT-->
+
+
+
+<%if(TOPIC=='1'||TOPIC=='0') { %>
+
+<div class="col-lg-12 mb-4 " >
+  <div class="card shadow mb-4">
+    <h1>Popular Online Courses</h1>
+    <div class="list-group">
+      <a href="https://www.coursera.org/specializations/full-stack-react" class="list-group-item list-group-item-action">Full-Stack Web Development with React | Coursera</a>
+      <a href="https://www.coursera.org/specializations/android-app-development" class="list-group-item list-group-item-action"> Android App Development | Coursera</a>
+      <a href="https://www.coursera.org/specializations/cloud-computing" class="list-group-item list-group-item-action">Cloud Computing | Coursera </a>
+      <a href="https://www.coursera.org/specializations/cyber-security" class="list-group-item list-group-item-action">Cybersecurity | Coursera </a>
+      <a href="https://www.coursera.org/professional-certificates/ibm-data-science" class="list-group-item list-group-item-action">IBM Data Science Professional Certificate | Coursera</a>
+      <a href="https://www.coursera.org/learn/machine-learning" class="list-group-item list-group-item-action">Machine Learning by Stanford University | Coursera  </a>
+      <a href="https://www.coursera.org/professional-certificates/google-data-analytics?" class="list-group-item list-group-item-action">Google Data Analytics | Coursera </a>
+      <a href="https://www.coursera.org/specializations/data-structures-algorithms?" class="list-group-item list-group-item-action">Data Structures and Algorithms | Coursera  </a>
+    </div> 
+</div></div>
+<%}%>
+
+
+
+<%if(TOPIC=='2'||TOPIC=='0') { %>
+  <div class="col-lg-12 mb-4 " >
+    <div class="card shadow mb-4">
+      <h1>Programming languages</h1>
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">C++</a>
+        <a href="#" class="list-group-item list-group-item-action">Java</a>
+        <a href="#" class="list-group-item list-group-item-action">Python</a>
+      </div>
+  </div></div>
+  
+<% } %> 
+
+
+ <%if(TOPIC=='3'||TOPIC=='0') { %>
+  <div class="col-lg-12 mb-4 " >
+  <div class="card shadow mb-4">
+    <h1>Platforms by MNCs</h1>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action">Google</a>
+      <a href="#" class="list-group-item list-group-item-action">Microsoft</a>
+      <a href="#" class="list-group-item list-group-item-action">Amazon</a>
+      <a href="#" class="list-group-item list-group-item-action">IBM</a>
+    </div>
+</div></div>
+<% } %> 
+<%if(TOPIC=='4'||TOPIC=='0') { %>
+  <div class="col-lg-12 mb-4 " >
+  <div class="card shadow mb-4">
+    <h1>Platform for Programmers</h1>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action">Codechef</a>
+      <a href="#" class="list-group-item list-group-item-action">Hackerrank</a>
+      <a href="#" class="list-group-item list-group-item-action">Github</a>
+    </div>
+</div></div>
+<% } %> 
+
+<%if(TOPIC=='5'||TOPIC=='0') { %>
+  <div class="col-lg-12 mb-4 " >
+  <div class="card shadow mb-4">
+    <h1>Programs for students</h1>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action">Github student developer pack</a>
+      <a href="#" class="list-group-item list-group-item-action">Microsoft student ambassadors</a>
+      <a href="#" class="list-group-item list-group-item-action">Google Developer Student clubs</a>
+    </div>
+</div></div>
+<% } %> 
+<%if(TOPIC=='6'||TOPIC=='0') { %>
+  <div class="col-lg-12 mb-4 " >
+  <div class="card shadow mb-4">
+    <h1>Online Mooc Platforms</h1>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action">Coursera</a>
+      <a href="#" class="list-group-item list-group-item-action">Udacity</a>
+      <a href="#" class="list-group-item list-group-item-action">Udemy</a>
+    </div>
+</div></div>
+<% } %> 
+<%if(TOPIC=='7'||TOPIC=='0') { %>
+  <div class="col-lg-12 mb-4 " >
+  <div class="card shadow mb-4">
+    <h1>Hackathons & Coding Contest</h1>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action">Mazor hacking league</a>
+      <a href="#" class="list-group-item list-group-item-action">Google source of code</a>
+      <a href="#" class="list-group-item list-group-item-action">Microsoft Imagine cup</a>
+    </div>
+</div></div>
+<% } %> 
+
+
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Solair AI © 2022</span></div>
+                </div>
+            </footer>
+    <script src="U-asset/bootstrap/js/bootstrap.min.js"></script>
+    <script src="U-asset/js/chart.min.js"></script>
+    <script src="U-asset/js/bs-init.js"></script>
+    <script src="U-asset/js/theme.js"></script>
+</body>
+
+</html>

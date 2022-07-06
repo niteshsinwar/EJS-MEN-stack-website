@@ -1,0 +1,11 @@
+<%- include("partials/header"); -%>
+    <section class="login-dark" style="height: 600px;">
+        <form action="/login"  method="POST">
+            <h2 class="visually-hidden">Login Form</h2>
+            <div class="illustration"><img height="60px" src="assets\img\solair.jpeg"></div>
+            <div class="mb-3"><input required class="form-control" type="text" name="username" placeholder="username"></div>
+            <div class="mb-3"><input required class="form-control" type="password" name="password" placeholder="Password"></div>
+            <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit">Log In</button></div><a class="forgot" href="Register">Dont have your account?</a>
+        </form>
+    </section>
+    <%- include("partials/footer"); -%>
