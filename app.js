@@ -30,7 +30,7 @@ app.use(passport.session());
 
 
 //data-base confirgations
-mongoose.connect("mongodb+srv://CEO-Nitesh:SOLAIR@solairdatabase.gsu2f.mongodb.net/myFirstDatabase", {useNewUrlParser: true});
+mongoose.connect("*******", {useNewUrlParser: true});
 
  //user-schema
  const userSchema=new mongoose.Schema({
