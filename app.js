@@ -224,17 +224,15 @@ const Post =mongoose.model("posts",postSchema);
 /*<<<<<<<<<<<<<<<<<<<<<user-page javascript>>>>>>>>>>>>>>>>>>>>>>>> */
     
   
-      var topic="0";
-      app.post("/topic",function(req, res){
-        topic=req.body.topic;
-        res.redirect("/user");
-    });
     
+  
+app.post("/topic",function(req, res){
+  res.render("user",{TOPIC: req.body.topic,USER: req.user.username});
+});    
   app.get("/user", function(req, res){
-          res.render("user",{TOPIC: topic,USER: req.user.username});   
+      res.render("user",{TOPIC: 0,USER: req.user.username});
     });
-    //res.render("user",{TOPIC: topic,COURSE:domain,PLATFORM:platform,USER: me});
-   //}); 
+  
         
   app.get("/logout", function(req, res){
     req.logout();
