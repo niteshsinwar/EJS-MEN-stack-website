@@ -30,7 +30,7 @@ app.use(passport.session());
 
 
 //data-base confirgations
-mongoose.connect("********", {useNewUrlParser: true});
+mongoose.connect("*******", {useNewUrlParser: true});
 
  //user-schema
  const userSchema=new mongoose.Schema({
@@ -323,7 +323,7 @@ app.post("/topic",function(req, res){
                  //code for showing the result
                   newMessage.save(function(err){
                    });
-                mesg="Your Message is Succesfully recieved"
+                mesg="Your Message is Succesfully Recieved"
                  res.redirect("/contact");
                 });
 
@@ -336,6 +336,6 @@ app.post("/topic",function(req, res){
              
 /*<<<<<<<<<<<<<<<<<<<<<THE END>>>>>>>>>>>>>>>>>>>>>>>> */ 
           app.listen(process.env.PORT||3000,function () {
-          console.log("Server is running at port no 3000");
+          console.log("Server is running at port 3000");
              });
                  
