@@ -30,7 +30,7 @@ app.use(passport.session());
 
 
 //data-base confirgations
-mongoose.connect("*******", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://CEO-Nitesh:mGa5XRxhEClDc4PR@solairdatabase.gsu2f.mongodb.net/?retryWrites=true&w=majority", {useNewUrlParser: true});
 
  //user-schema
  const userSchema=new mongoose.Schema({
@@ -323,7 +323,7 @@ app.post("/topic",function(req, res){
                  //code for showing the result
                   newMessage.save(function(err){
                    });
-                mesg="Your Message is Succesfully Recieved"
+                mesg="Your Message is Succesfully sent"
                  res.redirect("/contact");
                 });
 
